@@ -12,7 +12,7 @@ fi
 
 if [[ "${RUN_AFTER:-1}" == "1" ]]; then
   echo "=========================="
-  echo "   Running CRUD "
+  echo "      Running CRUD "
   echo "=========================="
   ./build/dev/CRUD.exe
 else
