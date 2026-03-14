@@ -11,6 +11,9 @@ public:
   static void Connect();
   static void Disconnect();
 
+  static void Create();
   static void Read();
+  static void Update();
+  static void Delete();
 };
 } // namespace CRUD

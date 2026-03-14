@@ -51,7 +51,7 @@ int main() {
 
     switch (selected) {
     case 0:
-      printf("Create Computer selected\n");
+      Postgre::Create();
       break;
     case 1:
       Postgre::Read();
