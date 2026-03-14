@@ -57,10 +57,10 @@ int main() {
       Postgre::Read();
       break;
     case 2:
-      printf("Update Computer selected\n");
+      Postgre::Update();
       break;
     case 3:
-      printf("Delete Computer selected\n");
+      Postgre::Delete();
       break;
     case 4:
       Postgre::Disconnect();
