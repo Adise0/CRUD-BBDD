@@ -46,6 +46,14 @@ docker exec -it crud-postgres psql -U crud -d classroom
 
 ### Building the App
 
+In order to build the app simple select the `release` `cmake` preset. I also added a helper script to do so [release.sh](scripts/release.sh):
+
+```bash
+bash scripts/release.sh
+```
+
+As per the [preset config](./CMakePresets.json) the output folder is `build/release`
+
 ### Dev Workflow
 
 To use the [watcher script](scripts/watch.sh) run:
@@ -59,6 +67,16 @@ The option `-n` will prevent the program from running after compilation.
 I included the [watcher](scripts/watch.sh) so I can develop the C++ app with more agility. Feel free to inspect it, but it basically follows this structure:
 
 - Spins up a `watchexec` process that calls the [dev script](scripts/dev.sh)
-- The dev script calls the [build script](scripts/build.sh) and then spins up the
+- The dev script calls the [build script](scripts/build.sh) and then spins up the program (if no `-n` was passed)
+- The [build script](scripts/build.sh) calls the `cmake` preset and build commands:
+
+```bash
+cmake --preset dev
+cmake --build --preset dev
+```
+
+As per the [preset config](./CMakePresets.json) the output folder is `build/dev`
 
 ## Usage
+
+TODO> complete this
