@@ -20,6 +20,12 @@ A simple C++ console app performing CRUD operations on a PostgreSQL database, bu
 
 Our CRUD app will be acting on a PostrgreSQL backend. I choose to implement it via a docker container using [postgres:latest](https://hub.docker.com/_/postgres).
 
+The setup bundled in the [docker.sh script](scripts/docker.sh). To run it use:
+
+```bash
+bash scripts/docker.sh
+```
+
 Spin up the database container:
 
 ```bash
@@ -79,4 +85,4 @@ As per the [preset config](./CMakePresets.json) the output folder is `build/dev`
 
 ## Usage
 
-TODO> complete this
+TODO: complete this
