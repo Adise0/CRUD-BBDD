@@ -4,7 +4,7 @@
 
 `CRUD` is an acronym for `Create`, `Read`, `Update` and `Delete`. In the context of a BBDD It's usually refering to the program that handles these actions on the database.
 
-### 1.1 Object and Structure
+#### 1.1 Object and Structure
 
 For this exercise I choose the following structure:
 
@@ -15,17 +15,23 @@ For this exercise I choose the following structure:
 ```json
 // COMPUTER STRUCTURE
 {
-  "id": "INT",
+  "n_of_users": "INT",
   "name": "String",
-  "isActive": "BOOL",
+  "is_active": "BOOL",
   "type": ["WORKSTATION", "GAMING", "LAPTOP"]
 }
 ```
 
-### 2. Creating the table and enum
+<br/>
+
+### 2. Creating the Table, Enum, Object and inserting the initial records
 
 You can find the `SQL` statements used to create the table and enum in the [2-CreatingStructures_Table-Enum.sql](./sql/2-CreatingStructures_Table-Enum.sql) file.
 
-### 3. Creating the table and enum
+![Statement proof](./img/2.png)
 
-You can find the `SQL` statements used to create the `Computer` struct in the [3-CreatingStructures_Computer.sql](./sql/3-CreatingStructures_Computer.sql) file.
+Proof of creation
+
+<br/>
+
+### 3. Creating the table and enum
