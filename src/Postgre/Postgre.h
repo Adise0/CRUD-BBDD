@@ -10,5 +10,7 @@ public:
 public:
   static void Connect();
   static void Disconnect();
+
+  static void Read();
 };
 } // namespace CRUD

@@ -25,4 +25,11 @@ add_executable(CRUD ${CRUD_LIB_SRC})
 # Dependencies
 # -----------------------------
 find_package(libpqxx CONFIG REQUIRED)
-target_link_libraries(CRUD PRIVATE libpqxx::pqxx)
+find_package(ftxui CONFIG REQUIRED)
+
+target_link_libraries(CRUD PRIVATE
+  libpqxx::pqxx
+  ftxui::screen
+  ftxui::dom
+  ftxui::component
+)
