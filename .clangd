@@ -1,0 +1,24 @@
+CompileFlags:
+  CompilationDatabase: build/dev
+  Add:
+    - -IC:/dev/vcpkg/installed/x64-windows/include
+    - -D_WIN32
+    - -DWIN32
+    - -DPQXX_SHARED
+    - -D_ALLOW_COMPILER_AND_STL_VERSION_MISMATCH
+    - -fexceptions
+  Remove:
+    - /nologo
+    - /TP
+    - /GR
+    - /EHsc
+    - /RTC1
+    - /MDd
+    - /Zi
+    - /Ob0
+    - /Od
+    - /FS
+    - -external:*
+    - /D*
+    - /Fo*
+    - /Fd*
