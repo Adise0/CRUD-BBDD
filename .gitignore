@@ -1,0 +1,7 @@
+# EDITOR
+.vscode
+
+# BUILD
+default
+build
+
