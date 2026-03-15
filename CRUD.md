@@ -34,4 +34,6 @@ Proof of creation
 
 <br/>
 
-### 3. Creating the table and enum
+## 2. Proof
+
+I did not follow standard as I thought the best approach was to record a simple video.
