@@ -85,4 +85,4 @@ As per the [preset config](./CMakePresets.json) the output folder is `build/dev`
 
 ## Usage
 
-TODO: complete this
+Once the app is open you will be presented with a very user-friendly menu. From there ou can pick any CRUD action you want to make and/or exit the app.
